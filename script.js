@@ -1,12 +1,13 @@
 // js/pagination.js
 // Toggle menu visibility
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("nav-menu");
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
   });
-
 
 
 const itemsPerPage = 6;

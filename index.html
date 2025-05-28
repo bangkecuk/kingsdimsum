@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kings Dimsum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+
+    <header class="bg-yellow-300 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+          <h1 class="text-2xl font-bold">King's Dimsum</h1>
+          <nav>
+            <a href="#menu" class="mx-4 hover:text-red-500">Menu</a>
+            <a href="#order" class="mx-4 hover:text-red-500">Pesan</a>
+            <a href="#hero" class="mx-4 hover:text-red-500">Tentang Kami</a>
+            <a href="#partner" class="mx-4 hover:text-red-500">Partner</a>
+          </nav>
+        </div>
+      </header>
+      
+
+  <section class="relative h-[400px] bg-cover bg-center text-white text-center" style="background-image: url('images/hero.jpeg')">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full px-8">
+      <h2 class="text-4xl font-bold mb-4 drop-shadow-lg">Dimsum Hangat, Lezat & Halal</h2>
+      <p class="text-lg drop-shadow">Rasakan kelezatan dimsum buatan rumah, cocok untuk semua acara!</p>
+    </div>
+  </section>
+  
+
+  <section id="menu" class="max-w-6xl mx-auto py-12 px-4">
+    <h3 class="text-3xl font-bold mb-6 text-center text-yellow-600">Aneka Menu Kami</h3>
+    
+    <!-- Menu Grid -->
+    <div id="menuGrid" class="grid md:grid-cols-3 gap-8">
+      <!-- Setiap card diberi class 'menu-item' -->
+      <!-- Contoh 12 menu -->
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/abc.jpeg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Dimsum Ayam Original</h4>
+        <p class="text-gray-600 mb-2">Ayam cincang lezat dibungkus kulit wonton.</p>
+        <p class="font-semibold text-red-500">Rp 20.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/keju.jpeg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Dimsum Ayam Jamur</h4>
+        <p class="text-gray-600 mb-2">Ayam cincang lezat dibungkus kulit wonton.</p>
+        <p class="font-semibold text-red-500">Rp 20.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/udang.jpeg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Dimsum Ayam Keju</h4>
+        <p class="text-gray-600 mb-2">Ayam cincang lezat dibungkus kulit wonton.</p>
+        <p class="font-semibold text-red-500">Rp 20.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/hero.jpeg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Dimsum Udang</h4>
+        <p class="text-gray-600 mb-2">Ayam cincang lezat dibungkus kulit wonton.</p>
+        <p class="font-semibold text-red-500">Rp 20.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/wonton.jpg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Wonton Chili Oil</h4>
+        <p class="text-gray-600 mb-2">Wonton lembut isi ayam yang disiram minyak cabai homemade, menciptakan kombinasi rasa pedas, gurih, dan aromatik.</p>
+        <p class="font-semibold text-red-500">Rp 20.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/ceker.jpg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Ceker Ayam Saos</h4>
+        <p class="text-gray-600 mb-2">Ceker ayam empuk tanpa tulang yang dimasak dengan sambal mercon super pedas. Praktis dimakan, rasa pedasnya nendang!</p>
+        <p class="font-semibold text-red-500">Rp 15.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/gyoza.jpeg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Gyoza Goreng</h4>
+        <p class="text-gray-600 mb-2">Pangsit goreng isi daging yang juicy, disajikan dengan saus cocolan spesial. Cocok untuk cemilan atau pelengkap hidangan utama.</p>
+        <p class="font-semibold text-red-500">Rp 15.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/ramen.jpeg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Ramen Original</h4>
+        <p class="text-gray-600 mb-2">Ramen klasik dengan kuah bening gurih dan topping lengkap. Simpel, autentik, dan selalu bikin nyaman di setiap suapan.</p>
+        <p class="font-semibold text-red-500">Rp 35.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/curry.jpg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Curry Ramen (Ramen Kuah Kari Jepang)</h4>
+        <p class="text-gray-600 mb-2">Ramen kuah kari kental berpadu dengan mie lembut dan topping pilihan. Hangat, gurih, dan memanjakan lidah.</p>
+        <p class="font-semibold text-red-500">Rp 45.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/spicy.jpg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Spicy Ramen (Ramen Pedas)</h4>
+        <p class="text-gray-600 mb-2">Ramen pedas khas kami, dengan kuah merah menyala dan rasa autentik yang bikin ketagihan. Cocok untuk pecinta pedas sejati!
+            </p>
+        <p class="font-semibold text-red-500">Rp 45.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/shoyou.jpg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Shoyu Ramen</h4>
+        <p class="text-gray-600 mb-2">Bisa berbasis kuah Shoyu, Miso, atau Tonkotsu dengan tambahan cabe pedas
+            Isi: daging cincang, telur, daun bawang, jagung, nori
+            Tingkat pedas: Level 1 sampai 5
+            Cocok untuk: pecinta makanan pedas</p>
+        <p class="font-semibold text-red-500">Rp 45.000</p>
+      </div>
+      <div class="menu-item hidden border p-4 rounded-xl shadow-md hover:shadow-xl transition">
+        <img src="images/risol.jpg" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h4 class="text-xl font-bold mb-2">Risol Ayam Mercon </h4>
+        <p class="text-gray-600 mb-2">Risol renyah berisi ayam suwir pedas dengan bumbu khas, sempurna untuk camilan atau teman ngopi. Pedasnya nagih!</p>
+        <p class="font-semibold text-red-500">Rp 15.000</p>
+      </div>
+      <!-- Ulangi div .menu-item sebanyak 12, ubah konten masing-masing -->
+      <!-- (Untuk singkat, cukup copy-paste div di atas lalu ganti isinya) -->
+    </div>
+  
+    <!-- Pagination Buttons -->
+    <div class="flex justify-center mt-8 space-x-2">
+      <button onclick="changePage(1)" class="pagination-btn bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded font-bold">1</button>
+      <button onclick="changePage(2)" class="pagination-btn bg-yellow-200 hover:bg-yellow-300 px-4 py-2 rounded font-bold">2</button>
+    </div>
+  </section>
+  
+  
+
+  <!-- Order Section -->
+  <section id="order" class="bg-yellow-100 py-12 px-4">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-3xl font-bold mb-6 text-center">Pesan Sekarang</h3>
+      <p class="text-center text-sm text-gray-600 mb-6">*Catatan: Kami hanya siap antar kirim area Sidoarjo - Surabaya & ongkir akan berbeda tergantung jarak.</p>
+      <form id="orderForm" class="bg-white p-6 rounded shadow">
+        <label class="block mb-2">Nama:</label>
+        <input type="text" id="nama" class="w-full mb-4 p-2 border rounded" placeholder="Nama lengkap" required>
+  
+        <label class="block mb-2">Nomor HP:</label>
+<input
+  type="tel"
+  id="nomor"
+  inputmode="numeric"
+  maxlength="13"
+  class="w-full mb-4 p-2 border rounded"
+  placeholder="08xxxxxxxxxx"
+  required
+  oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,13);"
+/>
+<small id="errorNomor" class="text-red-500 text-sm hidden">Nomor harus diawali dengan 08 dan maksimal 13 digit</small>
+
+  
+        <label class="block mb-2">Alamat:</label>
+        <textarea id="alamat" class="w-full mb-4 p-2 border rounded h-24" placeholder="Tulis alamat lengkap Anda" required></textarea>
+  
+        <label class="block mb-2">Pesanan:</label>
+        <textarea id="pesanan" class="w-full mb-4 p-2 border rounded h-32 md:h-40 lg:h-48" placeholder="Contoh: 2 porsi ramen miso, 1 gyoza" required></textarea>
+  
+        <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full">
+          Kirim Pesanan via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Tentang Kami Section -->
+<section id="hero" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-4xl font-bold mb-6 text-yellow-600">Tentang Kami</h3>
+      <p class="text-lg leading-relaxed text-gray-700">
+        <strong>King's Dimsum</strong> adalah sebuah inisiatif kuliner rumahan yang tumbuh dari semangat untuk menghadirkan kelezatan otentik dimsum kepada masyarakat luas, tanpa harus jauh-jauh mencarinya di restoran mahal. Kami berkomitmen menyediakan produk makanan yang tidak hanya lezat dan berkualitas tinggi, tetapi juga halal, higienis, dan dibuat dengan sepenuh hati.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-gray-700">
+        Berdiri dari dapur kecil di tengah hiruk-pikuk kota, kami memulai perjalanan ini dengan satu visi sederhana: menghadirkan pengalaman menyantap dimsum premium yang mudah diakses oleh siapa pun, di mana pun. Menggunakan bahan-bahan segar pilihan dan resep yang terus disempurnakan, setiap dimsum kami dibentuk dengan ketelitian dan cita rasa yang konsisten. 
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-gray-700">
+        Lebih dari sekadar menjual makanan, <strong>King's Dimsum</strong> merupakan refleksi dari dedikasi kami dalam membangun merek lokal yang menjunjung tinggi kualitas, pelayanan ramah, dan kepercayaan pelanggan. Kami percaya bahwa setiap gigitan dapat menjadi pengalaman yang menggugah rasa, menghadirkan kehangatan, serta menghubungkan orang-orang melalui kenikmatan sederhana yang bermakna.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Partners Section -->
+<section id="partner" class="bg-yellow-100 py-12 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8 text-yellow-600">Our Partners</h3>
+      <p class="text-gray-700 mb-8">Pesan melalui platform favorit Anda!</p>
+  
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 items-center justify-center">
+        <!-- ShopeeFood -->
+        <a href="https://spf.shopee.co.id/8fGA1Z5VwM" target="_blank" class="transform hover:scale-110 transition duration-300 ease-in-out">
+          <img src="images/shopee.png" alt="ShopeeFood" class="h-16 md:h-20 object-contain mx-auto" />
+        </a>
+        
+        <!-- GoFood -->
+        <a href="https://gofood.link/a/PPyF6eJ" target="_blank" class="transform hover:scale-110 transition duration-300 ease-in-out">
+          <img src="images/gofood.png" alt="GoFood" class="h-16 md:h-20 object-contain mx-auto" />
+        </a>
+        
+        <!-- GrabFood -->
+        <a href="https://r.grab.com/g/6-20250528_212910_3b5746e619804584aeada408c2af415c_MEXMPS-6-C7A2NVNAT6EWTT" target="_blank" class="transform hover:scale-110 transition duration-300 ease-in-out">
+          <img src="images/grabfood.png" alt="GrabFood" class="h-16 md:h-20 object-contain mx-auto" />
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <footer class="bg-yellow-300 text-gray-800 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      
+      <!-- Brand & Tagline -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Dimsum Lezat</h2>
+        <p class="text-base leading-relaxed">
+          Nikmati dimsum rumahan yang selalu hangat, halal, dan menggugah selera. Cocok untuk semua acara, dari keluarga hingga teman kerja. Siap terima pesanan.
+        </p>
+      </div>
+  
+      <!-- Kontak -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Hubungi Kami</h3>
+        <ul class="space-y-2 text-base">
+          <li>📞 <span class="font-medium">0895-3247-57519</span></li>
+          <li>📍 Jl. jadamsari 2 keboan anom gedangan sidoarjo</li>
+          <li>📩 <a href="https://www.instagram.com/kings_dimsumm?igsh=ZTUydXMzYWdvamty&utm_source=qr" target="_blank" class="text-red-700 hover:underline font-medium">Instagram</a></li>
+        </ul>
+      </div>
+  
+      <!-- Navigasi -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Navigasi Cepat</h3>
+        <ul class="space-y-2 text-base">
+          <li><a href="#menu" class="hover:text-red-600">🍽️ Menu</a></li>
+          <li><a href="#order" class="hover:text-red-600">🛒 Pesan Sekarang</a></li>
+          <li><a href="#hero" class="hover:text-red-600">📌 Tentang Kami</a></li>
+          <li><a href="#partner" class="hover:text-red-600">🤝 Our Partner</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="border-t border-yellow-400 mt-12 pt-6 text-center text-sm">
+      <p>&copy; 2025 <strong>King's Dimsum</strong>. Semua hak cipta dilindungi. Made with ❤️ in Sidoarjo.</p>
+    </div>
+  </footer>
+  
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
